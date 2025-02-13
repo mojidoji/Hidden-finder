@@ -71,4 +71,3 @@ http://example.com
 http://anotherexample.com
 http://yetanotherexample.com
 
-the photo of it : https://github.com/mojidoji/Hidden-finder/blob/main/hiddenfiner.PNG
