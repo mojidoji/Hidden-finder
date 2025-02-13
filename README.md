@@ -21,7 +21,7 @@ It crawls JavaScript files for endpoint links, helping bug bounty hunters, penet
    ```bash
    git clone https://github.com/your-username/hidden-finder.git
    cd hidden-endpoint-finder
-   pip install -r requirements.txt (requests,playwright)
+   pip install -r requirements.txt
 
   Usages:
 To use the Hidden Endpoint Finder, you can run the script with various options:
