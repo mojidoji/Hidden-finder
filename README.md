@@ -12,7 +12,7 @@ It crawls JavaScript files for endpoint links, helping bug bounty hunters, penet
 - **Output to File**: Save all discovered endpoints into a file for easy analysis.
 - **Playwright Integration**: Uses Playwright for dynamically loaded JavaScript files, allowing the tool to capture endpoints in single-page applications (SPAs).
 - **Regex Filtering**: Uses regular expressions to find endpoints in JS files and pages.
-
+![Image](https://github.com/user-attachments/assets/b6e4be63-2f6b-4fce-bbca-4aa3ae4cc036)
 
 
 ## Installation
