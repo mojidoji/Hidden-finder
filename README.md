@@ -14,6 +14,7 @@ It crawls JavaScript files for endpoint links, helping bug bounty hunters, penet
 - **Regex Filtering**: Uses regular expressions to find endpoints in JS files and pages.
 
 
+
 ## Installation
 
 1. Clone this repository:
@@ -70,3 +71,4 @@ http://example.com
 http://anotherexample.com
 http://yetanotherexample.com
 
+the photo of it : https://github.com/mojidoji/Hidden-finder/blob/main/hiddenfiner.PNG
