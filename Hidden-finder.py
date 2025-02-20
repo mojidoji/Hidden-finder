@@ -25,6 +25,7 @@ print(BANNER)
 # Regular expressions for JS files and hidden endpoints
 ENDPOINT_REGEX = re.compile(r'["\'](\/[^"\']+)["\']')
 JS_REGEX = re.compile(r'src=["\'](.*?\.js)["\']')
+unwanted_chars = ['*', '#', '<', '>']
 
 # Store unique endpoints and crawled JS files
 found_endpoints = set()
@@ -62,7 +63,9 @@ def find_endpoints_in_js(js_file_url):
         if response.status_code == 200:
             endpoints = ENDPOINT_REGEX.findall(response.text)
             for endpoint in endpoints:
-                found_endpoints.add(endpoint)
+                # remove bad item
+                if not any(char in endpoint for char in unwanted_chars):
+                    found_endpoints.add(endpoint)
         else:
             print(f"Failed to fetch {js_file_url} with status code {response.status_code}")
     except Exception as e:
